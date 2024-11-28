@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions | Sudhastar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .terms-container {
+            margin: 50px auto;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #007bff;
+            display: flex;
+            align-items: center;
+        }
+        .section-title i {
+            font-size: 1.5em;
+            margin-right: 10px;
+            color: #0056b3;
+        }
+        .terms-content {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .terms-content i {
+            color: #17a2b8;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Terms and Conditions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>-->
+
+    <!-- Terms and Conditions Section -->
+    <div class="container terms-container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center section-title">Terms and Conditions</h1>
+                <div class="terms-content">
+                    <p><strong>Introduction:</strong> Welcome to Sudhastar! By using our website or services, you agree to comply with these terms.</p>
+
+                    <p><strong>Products:</strong> All products (sweets, savories, and batters) are made fresh and are subject to availability.</p>
+
+                    <p><strong>Payments:</strong> Payments are accepted via cash, UPI, credit/debit cards, and online banking. Refunds will be processed as per our return policy.</p>
+
+                    <p><strong>Delivery:</strong> Delivery timelines may vary depending on location.</p>
+
+                    <p><strong>Returns:</strong> Products once opened cannot be returned unless damaged during transit.</p>
+
+                    <p><strong>Modifications:</strong> We reserve the right to update terms without prior notice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+   >
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+{% endblock %}

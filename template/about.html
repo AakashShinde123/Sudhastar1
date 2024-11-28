@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Page Header Start -->
+<div class="page-header mb-0" style="background-image: url('/static/img/Taste.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 180px 0; color: white; text-align: center;">
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-12">
+               <h2>About Us</h2>
+            </div>
+            <div class="col-12">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+<!-- Page Header End -->
+
+
+<!-- Food Start -->
+<div class="food mt-0">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <div class="food-item">
+                    <i class="fas fa-candy-cane"></i>
+
+                    <h2>Sweets</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor auctor quis sem. 
+                    </p>
+                    <a href="">View Menu</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="food-item">
+                    <i class="flaticon-snack"></i>
+                    <h2>Savouries</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor auctor quis sem. 
+                    </p>
+                    <a href="">View Menu</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="food-item">
+                    <i class="flaticon-cocktail"></i>
+                    <h2>Batter</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor auctor quis sem. 
+                    </p>
+                    <a href="">View Menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Food End -->
+
+
+<!-- About Start -->
+<div class="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="/static/img/vid1.jpg" alt="Image">
+                    <button type="button" class="btn-play" data-toggle="modal" data-src="static\video\video.mp4" data-target="#videoModal">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <div class="section-header">
+                        <p>About Us</p>
+                        <h2>Cooking Since 2023</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Welcome to <span style="font-weight: bold; color: #0a0a0a;">SudhaStar</span>, a leading brand committed to delivering high-quality, flavorful products. We proudly offer a diverse range of offerings through our two sub-brands:
+                        </p>
+                        <p>
+                            <span style="font-weight: bold; color: #0a0a0a;">Sudhamrit</span>: Specializing in authentic Indian sweets made from fresh, healthy ingredients, ensuring a delightful and wholesome treat for every occasion. Each sweet is crafted with care to bring you the true taste of tradition.
+                        </p>
+                        <p> <span style="font-weight: bold; color: #0a0a0a;">Shwet</span>: Offering freshly made batters for soft idlis and crispy dosas, crafted from the finest materials for a perfect, traditional experience. Our batters are designed to deliver consistent quality and authentic flavors with every use.</p>
+                        <p>
+                            At <span style="font-weight: bold; color: #0a0a0a;">SudhaStar</span>, we also offer a selection of savory snacks, all prepared with the finest ingredients to guarantee freshness and taste.
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Video Modal Start-->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>        
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- Video Modal End -->
+{% endblock %}
