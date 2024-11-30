@@ -3,7 +3,7 @@
 
 
 <!-- Page Header End -->
-<div class="advertisement" style="background-color: #974762; color: white; padding: 5px; margin-bottom: 10px; font-size: 20px;">
+<div class="advertisement" style="background-color: #b14235; color: rgba(250, 242, 0, 0.986); padding: 5px; margin-bottom: 10px; font-size: 20px;">
     <marquee behavior="scroll" direction="left" scrollamount="8">
         <strong>"Indulge in the authentic taste of India – Fresh, handmade batters, sweets, and savory delights delivered to your doorstep!" </strong>
     </marquee>
@@ -17,39 +17,68 @@
     <div class="row text-center">
         <!-- Sweets Section -->
         <div class="col-md-4 mb-4">
-            <div class="card menu-card" style="background-image: url('/static/img/mainsweet.jpg'); background-size: cover; background-position: center;">
-                <div class="card-body text-white" style="background: rgba(0, 0, 0, 0.6);">
-                    <h5 class="card-title text-white">Sweets</h5>
-                    <p class="card-text text-white">Explore a variety of delightful sweets.</p>
-                    <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#sweetsModal">View Sweets</button>
+            <div class="card menu-card" style="background-image: url('/static/img/mainsweet.jpg'); background-size: cover; background-position: center; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <div class="card-body text-white" style="background: rgba(0, 0, 0, 0.6); border-radius: 15px; padding: 20px; transition: background-color 0.3s ease;">
+                    <h5 class="card-title text-white" style="font-size: 1.4rem; font-weight: bold;">Sweets</h5>
+                    <p class="card-text text-white" style="font-size: 1rem;">Explore a variety of delightful sweets.</p>
+                    <button class="btn btn-warning mt-3" style="background-color: #f8b400; border-color: #f8b400; font-weight: bold; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;" data-bs-toggle="modal" data-bs-target="#sweetsModal">View Sweets</button>
                 </div>
             </div>
         </div>
 
         <!-- Savories Section -->
         <div class="col-md-4 mb-4">
-            <div class="card menu-card" style="background-image: url('/static/img/mainsavouries.jpg'); background-size: cover; background-position: center;">
-                <div class="card-body text-white" style="background: rgba(0, 0, 0, 0.6);">
-                    <h5 class="card-title text-white">Savouries</h5>
-                    <p class="card-text text-white">Discover tasty and crispy Savouries.</p>
-                    <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#savouriesModal">View Savories</button>
+            <div class="card menu-card" style="background-image: url('/static/img/mainsavouries.jpg'); background-size: cover; background-position: center; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <div class="card-body text-white" style="background: rgba(0, 0, 0, 0.6); border-radius: 15px; padding: 20px; transition: background-color 0.3s ease;">
+                    <h5 class="card-title text-white" style="font-size: 1.4rem; font-weight: bold;">Savouries</h5>
+                    <p class="card-text text-white" style="font-size: 1rem;">Discover tasty and crispy Savouries.</p>
+                    <button class="btn btn-warning mt-3" style="background-color: #f8b400; border-color: #f8b400; font-weight: bold; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;" data-bs-toggle="modal" data-bs-target="#savouriesModal">View Savories</button>
                 </div>
             </div>
         </div>
 
         <!-- Batter Section -->
         <div class="col-md-4 mb-4">
-            <div class="card menu-card" style="background-image: url('/static/img/mainbatter.jpg'); background-size: cover; background-position: center;">
-                <div class="card-body text-white" style="background: rgba(0, 0, 0, 0.6);">
-                    <h5 class="card-title text-white">Batter</h5>
-                    <p class="card-text text-white">Find premium-quality batters for cooking.</p>
-                    <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#batterModal">View Batter</button>
+            <div class="card menu-card" style="background-image: url('/static/img/mainbatter.jpg'); background-size: cover; background-position: center; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <div class="card-body text-white" style="background: rgba(0, 0, 0, 0.6); border-radius: 15px; padding: 20px; transition: background-color 0.3s ease;">
+                    <h5 class="card-title text-white" style="font-size: 1.4rem; font-weight: bold;">Batter</h5>
+                    <p class="card-text text-white" style="font-size: 1rem;">Find premium-quality batters for cooking.</p>
+                    <button class="btn btn-warning mt-3" style="background-color: #f8b400; border-color: #f8b400; font-weight: bold; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;" data-bs-toggle="modal" data-bs-target="#batterModal">View Batter</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<script>
+    // Add hover effect via JS to simulate hover using inline styles
+    const cards = document.querySelectorAll('.menu-card');
+    cards.forEach(card => {
+        card.addEventListener('mouseover', () => {
+            card.style.transform = 'translateY(-10px)';
+            card.style.boxShadow = '0 15px 25px rgba(0, 0, 0, 0.3)';
+        });
+
+        card.addEventListener('mouseout', () => {
+            card.style.transform = 'none';
+            card.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+        });
+    });
+
+    // Button hover effect simulation
+    const buttons = document.querySelectorAll('.btn-warning');
+    buttons.forEach(button => {
+        button.addEventListener('mouseover', () => {
+            button.style.backgroundColor = '#f1a300';
+            button.style.borderColor = '#f1a300';
+        });
+
+        button.addEventListener('mouseout', () => {
+            button.style.backgroundColor = '#f8b400';
+            button.style.borderColor = '#f8b400';
+        });
+    });
+</script>
 
 <!-- Modal for Sweets -->
 <div class="modal fade" id="sweetsModal" tabindex="-1" aria-labelledby="sweetsModalLabel" aria-hidden="true">
@@ -180,41 +209,50 @@
 <!-- Modal for Batter -->
 <div class="modal fade" id="batterModal" tabindex="-1" aria-labelledby="batterModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
+        <div class="modal-content shadow-lg border-0 rounded-3">
+            <div class="modal-header bg-warning text-white">
                 <h5 class="modal-title" id="batterModalLabel">Batter Menu</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <div class="row">
+            <div class="modal-body p-4">
+                <div class="row g-4">
                     <!-- Batter Items -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
                             <img src="/static/img/idli.jpeg" alt="Idli Batter" class="card-img-top img-fluid">
                             <div class="card-body">
-                                <h5 class="card-title">Idli Batter</h5>
-                                <p class="card-text">Price: ₹80</p>
-                                <p>Ready-to-use fermented batter for soft, fluffy idlis.</p>
+                                <h5 class="card-title text-dark">Idli Batter</h5>
+                                <p class="card-text text-muted">Price: ₹80</p>
+                                <p class="text-dark">Ready-to-use fermented batter for soft, fluffy idlis.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <button class="btn btn-warning w-100">Add to Cart</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
                             <img src="/static/img/dosa.jpeg" alt="Dosa Batter" class="card-img-top img-fluid">
                             <div class="card-body">
-                                <h5 class="card-title">Dosa Batter</h5>
-                                <p class="card-text">Price: ₹90</p>
-                                <p>Perfect batter for crispy dosas and uttapams.</p>
+                                <h5 class="card-title text-dark">Dosa Batter</h5>
+                                <p class="card-text text-muted">Price: ₹90</p>
+                                <p class="text-dark">Perfect batter for crispy dosas and uttapams.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <button class="btn btn-warning w-100">Add to Cart</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
                             <img src="/static/img/mainbatter.jpg" alt="Pakoda Batter" class="card-img-top img-fluid">
                             <div class="card-body">
-                                <h5 class="card-title">idali batter</h5>
-                                <p class="card-text">Price: ₹60</p>
-                                <p>Ready-to-fry batter for crispy, crunchy pakodas.</p>
+                                <h5 class="card-title text-dark">Pakoda Batter</h5>
+                                <p class="card-text text-muted">Price: ₹60</p>
+                                <p class="text-dark">Ready-to-fry batter for crispy, crunchy pakodas.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <button class="btn btn-warning w-100">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -225,60 +263,95 @@
 </div>
 
 <style>
-    /* General Styling */
-    .menu-card {
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .menu-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    }
-
+    /* Modal Design */
     .modal-content {
-        border-radius: 10px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
     }
 
     .modal-header {
-        background: #f1f1f1;
-        border-bottom: 2px solid #ddd;
+        background-color: #f8b400;
+        color: white;
+        border-bottom: 1px solid #f1a300;
     }
 
-    .card-body p {
-        font-size: 14px;
-        color: #555;
+    .modal-body {
+        padding: 40px;
+        background-color: #fafafa;
+    }
+
+    /* Card Design */
+    .card {
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .card-img-top:hover {
+        transform: scale(1.1);
     }
 
     .card-body h5 {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         font-weight: bold;
+        color: #333;
+        transition: color 0.3s ease;
     }
 
-    .btn-primary {
+    .card-body p {
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .card-footer button {
+        background-color: #f8b400;
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding: 12px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .card-footer button:hover {
+        background-color: #f1a300;
+    }
+
+    /* Button Hover Effect */
+    .btn-warning {
         background-color: #f8b400;
         border-color: #f8b400;
+        transition: background-color 0.3s ease;
     }
 
-    .btn-primary:hover {
+    .btn-warning:hover {
         background-color: #f1a300;
         border-color: #f1a300;
     }
 
-    .modal-body {
-        padding: 30px;
-    }
+    /* Responsiveness */
+    @media (max-width: 768px) {
+        .card-body p {
+            font-size: 0.9rem;
+        }
 
-    .row .card {
-        transition: transform 0.2s ease;
-    }
-
-    .row .card:hover {
-        transform: scale(1.05);
+        .card-body h5 {
+            font-size: 1rem;
+        }
     }
 </style>
+
 
 <!-- Include Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
